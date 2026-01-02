@@ -8,4 +8,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
 
+  titleChanged: string = 'Welcome to Rammy Group';
 }
