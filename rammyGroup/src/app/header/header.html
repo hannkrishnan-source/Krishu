@@ -1,7 +1,7 @@
 <header style="background-color: lightblue; padding: 10px; text-align: center;">
     Rammy Group Ltd.
 </header>
-<img src="/assets/flight-icon.png" alt="Flight Icon" style="display: block; margin: 10px auto;">
+<img [src]="img" alt="Flight Icon" style="display: block; margin: 10px auto;">
 <h1 style="margin: 0; text-align: center; color: red;">Rammy Group - Your Trusted Travel Partner</h1>
 <h2 style="color: blue; text-align: center;">
     Join us to explore the world of flights!</h2>
@@ -12,22 +12,22 @@
 <form style="max-width: 500px; margin: 0 auto;" (ngSubmit)="onSubmit()" #enquiryForm="ngForm">
     <div style="display: flex; flex-direction: column; gap: 15px;">
         <div style="display: flex; flex-direction: column;">
-            <label for="name" style="font-size: large;">Full Name:</label>
+            <label for="name" style="font-size: large;">Full Name*</label>
             <input type="text" id="name" name="name" required style="position: relative;">
         </div>
 
         <div style="display: flex; flex-direction: column;">
-            <label for="email" style="font-size: large;">Email:</label>
+            <label for="email" style="font-size: large;">Email*</label>
             <input type="email" id="email" name="email" required style="position: relative;">
         </div>
 
         <div style="display: flex; flex-direction: column;">
-            <label for="contact number" style="font-size: large;">Contact Number:</label>
+            <label for="contact number" style="font-size: large;">Contact Number*</label>
             <input type="tel" id="contact number" name="contact number" required style="position: relative;">
         </div>
 
         <div style="display: flex; flex-direction: column;">
-            <label for="message" style="font-size: large;">Message:</label>
+            <label for="message" style="font-size: large;">Message*</label>
             <textarea id="message" name="message" rows="4" required style="position: relative;"></textarea>
         </div>
         <button type="submit">Submit</button>

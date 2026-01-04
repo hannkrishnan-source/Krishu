@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
 })
 export class HeaderComponent {
 
+  img = '/assets/flight-icon.png';
   successMessage = false;
 
   onSubmit() {
